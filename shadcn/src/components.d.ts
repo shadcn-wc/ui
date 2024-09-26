@@ -7,6 +7,13 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface ShadButton {
+        "asChild": boolean;
+        "disabled": boolean;
+        "icon"?: string;
+        "loading": boolean;
+        "loadingText": string;
+        "size": 'small' | 'medium' | 'large';
+        "variant": 'primary' | 'secondary' | 'destructive' | 'outline' | 'ghost' | 'link';
     }
 }
 declare global {
@@ -22,6 +29,13 @@ declare global {
 }
 declare namespace LocalJSX {
     interface ShadButton {
+        "asChild"?: boolean;
+        "disabled"?: boolean;
+        "icon"?: string;
+        "loading"?: boolean;
+        "loadingText"?: string;
+        "size"?: 'small' | 'medium' | 'large';
+        "variant"?: 'primary' | 'secondary' | 'destructive' | 'outline' | 'ghost' | 'link';
     }
     interface IntrinsicElements {
         "shad-button": ShadButton;

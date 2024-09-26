@@ -8,13 +8,14 @@ import { Components } from '@shadcn-wc/core';
 
 
 @ProxyCmp({
+  inputs: ['asChild', 'disabled', 'icon', 'loading', 'loadingText', 'size', 'variant']
 })
 @Component({
   selector: 'shad-button',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: '<ng-content></ng-content>',
   // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-  inputs: [],
+  inputs: ['asChild', 'disabled', 'icon', 'loading', 'loadingText', 'size', 'variant'],
 })
 export class ShadButton {
   protected el: HTMLElement;
