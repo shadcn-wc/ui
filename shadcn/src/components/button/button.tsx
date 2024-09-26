@@ -7,7 +7,7 @@ export class Button {
 
     render() {
         return (
-            <div></div>
+            <button></button>
         );
     }
 }

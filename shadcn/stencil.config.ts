@@ -3,6 +3,7 @@ import { angularOutputTarget } from '@stencil/angular-output-target';
 
 export const config: Config = {
   namespace: 'shadcn',
+  globalStyle: 'www/build/tailwind.css',
   outputTargets: [
     {
       type: 'dist',
