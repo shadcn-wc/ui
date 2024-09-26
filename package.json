@@ -1,6 +1,9 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "dev":"pnpm --filter @shadcn-wc/core start"
+  },
   "devDependencies": {
     "@types/node": "^22.7.2",
     "lerna": "^8.1.8",
